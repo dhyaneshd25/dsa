@@ -120,5 +120,92 @@ for i in range(0,2*n-1):
             print(val,end='')
             val+=1
     
-    print()       
-        
+    print()      
+    
+    
+'''
+   *
+  ***
+ *****
+*******
+'''
+for  i in range(n):
+    '''
+         *
+        **
+       ***
+      ****
+    '''
+    for j in range(n-i-1):
+        print(" ",end='')
+    for j in range(i+1):
+        print("*",end='')
+    '''
+    *
+    **
+    ***
+    '''
+    for j in range(i):#i+1
+        print("*",end='')
+    print() 
+
+
+'''
+*******
+ *****
+  ***
+   *
+'''      
+
+for  i in range(n):
+    '''
+    ****
+     ***
+      **
+       *
+    '''
+    for j in range(i):
+        print(" ",end='')
+    for j in range(n-i):
+        print("*",end='')
+    '''
+    ****
+    ***
+    **
+    *
+    '''
+    for j in range(n-i-1):#n-i
+        print("*",end='')
+    print()
+    
+    '''
+      *
+     * *
+    *   *
+   *     *
+  *       *
+ *         *
+*************
+    '''
+for i in range(n):
+    for j in range(n-i-1):
+        print(' ',end='')
+    
+    if i==n-1:
+        for  j in range(n):
+            print("*",end='')
+    else:
+        print("*",end='')
+    if i!=n-1:
+        for j in range(i-1):
+            print(' ',end='')
+    if i!=n-1:
+        for j in range(i):
+            print(' ',end='')  
+    if i!=0 and i!=n-1:
+        print('*',end='')
+    elif i==n-1:
+        for j in range(n-1):
+            print("*",end='')
+    
+    print()
