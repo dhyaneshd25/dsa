@@ -15,9 +15,9 @@ def longestCommonPrefix( strs):
     """
     if len(strs) == 1:
         return strs[0]
-    ans = self.findcommonprefix(strs[0],strs[1])
+    ans = findcommonprefix(strs[0],strs[1])
     for i in range(2,len(strs)):
-        p  = self.findcommonprefix(strs[i],strs[i-1])
+        p  = findcommonprefix(strs[i],strs[i-1])
         if len(ans)>len(p):
             ans= p
     return ans
