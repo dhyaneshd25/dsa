@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 class TextJustification {
     public List<String> fullJustify(String[] words, int maxWidth) {
         List<String> ans = new ArrayList<>();
